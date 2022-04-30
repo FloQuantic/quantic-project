@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "quantic-lib": [
+        "dist/quantic-lib/quantic-lib",
+        "dist/quantic-lib"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
