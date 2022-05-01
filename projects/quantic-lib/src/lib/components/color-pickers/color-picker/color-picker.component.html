@@ -1,0 +1,6 @@
+<div class="color-picker-container">
+  <div class="color-choice" *ngFor="let color of colorList">
+    <div class="color-name">{{color.name}}</div>
+    <div class="color" [style.background-color]="color.hex"></div>
+  </div>
+</div>

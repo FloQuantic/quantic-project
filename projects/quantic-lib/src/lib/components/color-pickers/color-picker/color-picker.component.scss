@@ -1,0 +1,20 @@
+@import '../../../styles/colors';
+
+.color-picker-container {
+  display: flex;
+  flex-wrap: wrap;
+  .color-choice {
+    padding: 5px;
+    width: 50px;
+
+    .color-name {
+      margin-bottom: 5px;
+    }
+    .color {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $black;
+    }
+  }
+}
