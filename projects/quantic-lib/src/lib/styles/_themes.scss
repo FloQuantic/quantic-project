@@ -1,0 +1,98 @@
+// main themes
+.primary-theme,
+.primary-action {
+  background-color: $blue;
+  color: $black;
+}
+
+.secondary-theme,
+.secondary-action {
+  background-color: $blue-l5;
+  color: $black;
+}
+
+.tertiary-theme,
+.tertiary-action {
+  background-color: $blue-l5;
+  color: $blue-d5;
+}
+
+.secondary-action,
+.primary-action,
+.tertiary-action {
+  transition: 0.3s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.secondary-action,
+.primary-action {
+  &:hover {
+    background-color: $blue-d3;
+    color: $white;
+    border: 1px solid $blue-d3;
+  }
+
+  &:active {
+    box-shadow: 0 0 4px $blue-d3;
+  }
+
+}
+
+.primary-action {
+  border: 1px solid $blue;
+
+  &:disabled {
+    background-color: $blue-l3;
+  }
+}
+
+.secondary-action {
+  border: 1px solid $blue-d3;
+
+  &:disabled {
+    background-color: $blue-l5;
+  }
+}
+
+.tertiary-action {
+  &:hover {
+    color: $blue;
+    text-shadow: 0 0 4px $blue;
+  }
+
+  &:active {
+    text-shadow: 0 0 4px $blue;
+  }
+}
+
+// utility themes
+.success-primary {
+  background-color: $green;
+  color: $white;
+}
+
+.success-secondary {
+  background-color: $white;
+  color: $green;
+}
+
+.error-primary {
+  background-color: $red;
+  color: $white;
+}
+
+.error-secondary {
+  background-color: $white;
+  color: $red;
+}
+
+.warn-primary {
+  background-color: $yellow;
+  color: $white;
+}
+
+.warn-secondary {
+  background-color: $white;
+  color: $yellow;
+}
