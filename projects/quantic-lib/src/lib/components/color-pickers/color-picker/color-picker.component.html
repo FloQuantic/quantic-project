@@ -1,6 +1,11 @@
 <div class="color-picker-container">
-  <div class="color-choice" *ngFor="let color of colorList">
-    <div class="color-name">{{color.name}}</div>
-    <div class="color" [style.background-color]="color.hex"></div>
+  <div class="color-choice primary-action" (mouseenter)="isHovered[i] = true" (mouseleave)="isHovered[i] = false"
+    *ngFor="let color of colorList; let i = index">
+    <div class="color" [class.hover]="isHovered[i]" [style.background-color]="colors[color]"></div>
+    <div class="color-text" [class.hover]="isHovered[i]"
+      [style.color]="(isHovered[i]) ? getFontColor(color) : 'inherit'">
+      <div class="color-name">{{color}}</div>
+      <div class="color-hex">{{colors[color]}}</div>
+    </div>
   </div>
 </div>
